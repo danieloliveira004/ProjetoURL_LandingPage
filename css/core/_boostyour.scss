@@ -1,0 +1,28 @@
+#boots-your {
+  text-align: center;
+  background: url('../images/bg-boost-desktop.svg'), $dark-violet;
+  background-size: cover;
+  padding: 2.5em 0;
+
+  h2 {
+    font-weight: 700;
+    font-size: 2em;
+    color: $white;
+    padding-bottom: .6em;
+  }
+
+  .btn-circle {
+    font-size: 1.1em;
+    padding: .5em 1.8em;
+  }
+}
+
+@media (max-width: 992px) {
+  #boots-your {
+    h2 {
+      font-size: 1.4em;
+    }
+    background: url('../images/bg-boost-mobile.svg'), $dark-violet;
+    background-size: cover;
+  }
+}

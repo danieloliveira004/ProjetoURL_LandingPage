@@ -1,0 +1,30 @@
+.footer {
+  background: $very-dark-violet;
+  padding: 2em 0;
+
+  a {
+    text-decoration: none;
+    color: $grayish-violet;
+    font-size: 0.8em;
+    transition-duration: 0.3s;
+    &:hover {
+      color: $cyan;
+    }
+  }
+}
+
+.nav-title {
+  color: $white;
+  font-size: 0.9em;
+  padding-bottom: 0.5em;
+}
+
+.links-sociais {
+  svg {
+    fill: #f7f7f7;
+    transition-duration: 0.3s;
+    &:hover {
+      fill: #2acfcf;
+    }
+  }
+}

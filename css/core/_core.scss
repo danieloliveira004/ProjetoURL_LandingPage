@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+body {
+  @include Poppins(500);
+  font-size: 18px;
+}
+
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.btn-circle {
+  @include btn;
+  border-radius: 1.5em;
+}
+
+.btn-squad {
+  @include btn;
+  border-radius: .5em;
+}

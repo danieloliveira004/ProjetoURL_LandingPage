@@ -1,0 +1,18 @@
+@mixin Poppins($w) {
+  font-family: "Poppins", sans-serif;
+  // 500, 700
+  font-weight: $w;
+}
+
+@mixin btn {
+  background: $cyan;
+  color: $white !important;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 700;
+  transition-duration: .4s;
+
+  &:hover {
+    background: $cyan-hover;
+  }
+}

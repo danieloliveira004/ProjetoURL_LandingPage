@@ -1,0 +1,65 @@
+.header {
+  position: relative;
+  padding: 2em 0;
+
+  a {
+    @include Poppins(700);
+    font-size: 0.8em;
+    color: $grayish-violet;
+    text-decoration: none;
+    transition-duration: 0.2s;
+
+    &:hover {
+      color: $very-dark-blue;
+    }
+  }
+
+  .btn-circle {
+    padding: 0.4em 1.8em;
+  }
+}
+
+#burguer {
+  width: 30px;
+  height: 30px;
+  fill: $grayish-violet;
+  cursor: pointer;
+}
+
+@media (max-width: 992px) {
+  .nav-nav {
+    z-index: 1000;
+    height: fit-content;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all .8s ease-in-out;
+
+    text-align: center;
+    position: absolute;
+    top: 100%; left: 0; right: 0;
+    font-size: 1.2em;
+    border-radius: .5em;
+
+    background: $dark-violet;
+
+    &>nav, &>div {padding: 1em;}
+
+    a {color: $white;}
+
+    div>a {
+      display: block;
+      width: 100%;
+    }
+
+    nav:first-of-type {
+      border-bottom: 1px solid $gray;
+      padding-bottom: .3em;
+    }
+
+    &.active {
+      max-height: 700px;
+      opacity: 1;
+    }
+  } 
+}
